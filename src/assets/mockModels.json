@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Industrial Robot Arm",
+    "description": "A six-axis robotic arm for assembly line automation.",
+    "categories": ["Robotics", "Automation"],
+    "tags": ["robot", "arm", "industrial"],
+    "imageUrl": "/assets/robot-arm.jpg",
+    "documentation": "https://example.com/robot-arm-docs",
+    "usageExamples": ["Assembly line automation", "Material handling"],
+    "versions": [
+      {
+        "version": "1.0.0",
+        "status": "stable"
+      },
+      {
+        "version": "1.1.0-beta",
+        "status": "experimental"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "CNC Milling Machine",
+    "description": "High-precision CNC machine for metal fabrication.",
+    "categories": ["Manufacturing", "Machining"],
+    "tags": ["cnc", "milling", "metal"],
+    "imageUrl": "/assets/cnc-machine.jpg",
+    "documentation": "https://example.com/cnc-docs",
+    "usageExamples": ["Metal fabrication", "Prototyping"],
+    "versions": [
+      {
+        "version": "1.2.0",
+        "status": "stable"
+      }
+    ]
+  }
+]
