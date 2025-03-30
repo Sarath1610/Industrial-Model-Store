@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'; //remove useState
 import ModelCard from '../components/ModelCard';
 import FilterBar from '../components/FilterBar';
 import mockModels from '../assets/mockModels.json';
 // import './ModelListingPage.css'; // Create CSS for this page
 
 function ModelListingPage() {
-    const [models, setModels] = useState(mockModels);
+    // const [models, setModels] = useState(mockModels); remove this line
+    const models = mockModels; //initialize models directly
     const [searchTerm, setSearchTerm] = useState('');
     const [categoryFilter, setCategoryFilter] = useState('');
 
