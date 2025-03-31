@@ -1,0 +1,44 @@
+.filter-bar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px 10px 10px 100px;
+    border-right: 1px hsl(224, 39%, 15%);
+    background: linear-gradient(to right,  hsl(226, 35%, 7%), hsl(224, 39%, 11%));
+    width: 25%;
+}
+
+.filter-bar h3 {
+    font-weight: normal;
+    margin: 1.5rem 0 2rem 0;
+    font-size: 1rem;
+}
+
+input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    padding: 0.3rem 0 0.3rem 2rem;
+    background-image: url("../assets/searchIcon.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 0.5rem 0 1rem 0;
+}
+
+
+.tag-filters {
+    display: flex;
+    flex-wrap: wrap;
+    background: none;
+    border: none;
+    gap: 0.5rem;
+}
+
+.tag-filters button {
+    border: 1px solid hsl(224, 39%, 30%);
+    background: hsl(226, 35%, 7%);
+    border-radius: 5px;
+    padding: 4px 5px;
+}
+

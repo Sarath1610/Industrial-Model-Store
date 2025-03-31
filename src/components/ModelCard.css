@@ -1,8 +1,39 @@
 .model-card {
-    border: 1px solid #ccc;
+    display: flex;
+    gap: 1rem;
+    background: linear-gradient(to right, hsl(224, 39%, 11%), hsl(226, 35%, 7%), hsl(226, 35%, 7%));
+    border: 1px solid hsl(224, 39%, 15%);
+    border-radius: 10px;
     padding: 16px;
-    margin-bottom: 16px;
+    margin: 10px;
+    text-decoration: none;
+    width: 50rem;
+    height: 25px;
 }
+
+.model-card:hover {
+    background: linear-gradient(to left, hsl(224, 39%, 11%), hsl(224, 39%, 11%), hsl(226, 35%, 7%));
+}
+
+.model-card:hover h2{
+    cursor: pointer;
+    color: #EF9B0F;
+}
+
+.model-card h2{
+    margin-top: 0;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.model-card p {
+    display: none;
+}
+
+.model-card:hover p {
+    /*display: block;*/
+}
+
 
 .model-card img {
     max-width: 100%;
@@ -10,12 +41,21 @@
 }
 
 .model-tags {
-    margin-top: 8px;
+    margin-top: 0;
+    background: transparent;
 }
 
 .model-tag {
-    background-color: #f0f0f0;
-    padding: 4px 8px;
+    background-color: hsl(204, 30%, 30%);
+    padding: 2px 4px;
     margin-right: 4px;
     border-radius: 4px;
+    font-size: 0.6rem;
+    color: hsl(204, 30%, 80%);
+}
+
+.text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

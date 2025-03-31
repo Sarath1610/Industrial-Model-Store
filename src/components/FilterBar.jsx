@@ -1,23 +1,66 @@
 import React from 'react';
+import './FilterBar.css';
 
-function FilterBar({ searchTerm, onSearchChange, categoryFilter, onCategoryChange }) {
+function FilterBar({
+                       searchTerm,
+                       onSearchChange,
+                       tagFilter,
+                       onTagChange,
+                   }) {
+
+    // Define your tags
+    const tags = [
+        'robot',
+        'arm',
+        'industrial',
+        'automation',
+        'cobot',
+        'cnc',
+        'milling',
+        'cutting',
+        'laser cutting',
+        'additive manufacturing',
+        'forming',
+        'plc',
+        'conveyor',
+        'agv',
+        'material transport',
+        'gateway',
+        'electric motor',
+        'pump',
+        'simulation',
+        'digital twin',
+        'predictive maintenance',
+        'analytics',
+        'inspection',
+        'machine vision',
+        'motor',
+    ];
+
+
     return (
         <div className="filter-bar">
+
+            <h3>Tags</h3>
+
             <input
                 type="text"
-                placeholder="Search models..."
+                placeholder="Filter Models ny name"
                 value={searchTerm}
-                onChange={e => onSearchChange(e.target.value)}
+                onChange={(e) => onSearchChange(e.target.value)}
             />
 
-            <select value={categoryFilter} onChange={e => onCategoryChange(e.target.value)}>
-                <option value="">All Categories</option>
-                <option value="Robotics">Robotics</option>
-                <option value="Manufacturing">Manufacturing</option>
-                <option value="Automation">Automation</option>
-                <option value="Machining">Machining</option>
-                {/* Add more categories */}
-            </select>
+            <div className="tag-filters">
+                {tags.map((tag) => (
+                    <button
+                        key={tag}
+                        className={tagFilter === tag ? 'active' : ''}
+                        onClick={() => onTagChange(tag)}
+                    >
+                        {tag}
+                    </button>
+                ))}
+            </div>
         </div>
     );
 }

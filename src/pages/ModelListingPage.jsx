@@ -1,51 +1,66 @@
-import React, { useState, useEffect } from 'react'; //remove useState
+import React, { useState, useEffect } from 'react';
 import ModelCard from '../components/ModelCard';
 import FilterBar from '../components/FilterBar';
 import mockModels from '../assets/mockModels.json';
-// import './ModelListingPage.css'; // Create CSS for this page
+import IMAGES from '../images/IMAGES'
+import './ModelListingPage.css';
 
 function ModelListingPage() {
-    // const [models, setModels] = useState(mockModels); remove this line
-    const models = mockModels; //initialize models directly
+    const models = mockModels;
     const [searchTerm, setSearchTerm] = useState('');
-    const [categoryFilter, setCategoryFilter] = useState('');
+    const [tagFilter, setTagFilter] = useState('');
 
     useEffect(() => {
-        // This is where you would fetch data from an API in a real application
-        // For now, we're using mock data
+        // Fetch data from API here (if applicable)
     }, []);
 
     const handleSearchChange = (term) => {
         setSearchTerm(term);
     };
 
-    const handleCategoryChange = (category) => {
-        setCategoryFilter(category);
+    const handleTagChange = (tag) => {
+        // Single select for tags:
+        if (tagFilter === tag) {
+            setTagFilter(''); // Deselect if already selected
+        } else {
+            setTagFilter(tag); // Select the new tag
+        }
     };
 
-    const filteredModels = models.filter(model => {
-        return (
-            model.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-            (categoryFilter === '' || model.categories.includes(categoryFilter))
-        );
+    const filteredModels = models.filter((model) => {
+        const searchTextMatch = model.name
+            .toLowerCase()
+            .includes(searchTerm.toLowerCase());
+        const tagMatch =
+            tagFilter === '' || tagFilter === 'All Tags' || model.tags.includes(tagFilter);
+
+        return searchTextMatch && tagMatch;
     });
 
     return (
         <div className="model-listing-page">
-            <h1>Industrial Model Store</h1>
 
-            <FilterBar
-                searchTerm={searchTerm}
-                onSearchChange={handleSearchChange}
-                categoryFilter={categoryFilter}
-                onCategoryChange={handleCategoryChange}
-            />
+            <header className="top-bar">
+                <img src={IMAGES.image2} alt="logo"/>
+                <h1>Industrial</h1>
+            </header>
 
-            <div className="model-grid">
-                {filteredModels.map(model => (
-                    <ModelCard key={model.id} model={model} />
-                ))}
-            </div>
+            <main className="main-content">
+                <FilterBar
+                    searchTerm={searchTerm}
+                    onSearchChange={handleSearchChange}
+                    tagFilter={tagFilter}
+                    onTagChange={handleTagChange}
+                />
+
+                <div className="model-grid">
+                    <h3>Models</h3>
+
+                    {filteredModels.map((model) => (
+                        <ModelCard key={model.id} model={model}/>
+                    ))}
+                </div>
+            </main>
         </div>
     );
 }

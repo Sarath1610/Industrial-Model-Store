@@ -34,5 +34,249 @@
         "status": "stable"
       }
     ]
+  },
+  {
+    "id": 3,
+    "name": "Industrial 3D Printer",
+    "description": "Additive manufacturing system for rapid prototyping and custom parts.",
+    "categories": ["Manufacturing", "3D Printing"],
+    "tags": ["3d printing", "additive manufacturing", "prototyping"],
+    "imageUrl": "/assets/3d-printer.jpg",
+    "documentation": "https://example.com/3d-printer-docs",
+    "usageExamples": ["Prototyping", "Tooling", "Custom Parts"],
+    "versions": [
+      {
+        "version": "2.0.1",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Automated Conveyor System",
+    "description": "Material handling system for efficient movement of goods.",
+    "categories": ["Automation", "Logistics"],
+    "tags": ["conveyor", "automation", "material handling"],
+    "imageUrl": "/assets/conveyor.jpg",
+    "documentation": "https://example.com/conveyor-docs",
+    "usageExamples": ["Assembly lines", "Warehousing", "Distribution"],
+    "versions": [
+      {
+        "version": "1.5.0",
+        "status": "stable"
+      },
+      {
+        "version": "1.6.0-rc1",
+        "status": "experimental"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Industrial IoT Gateway",
+    "description": "Device for connecting industrial equipment to the internet.",
+    "categories": ["Automation", "IoT"],
+    "tags": ["iot", "gateway", "industrial internet"],
+    "imageUrl": "/assets/iot-gateway.jpg",
+    "documentation": "https://example.com/iot-gateway-docs",
+    "usageExamples": ["Data acquisition", "Remote monitoring", "Predictive maintenance"],
+    "versions": [
+      {
+        "version": "1.1.2",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Industrial Laser Cutter",
+    "description": "Precision laser cutting machine for various materials.",
+    "categories": ["Manufacturing", "Machining"],
+    "tags": ["laser cutting", "cutting", "fabrication"],
+    "imageUrl": "/assets/laser-cutter.jpg",
+    "documentation": "https://example.com/laser-cutter-docs",
+    "usageExamples": ["Sheet metal cutting", "Engraving", "Textile cutting"],
+    "versions": [
+      {
+        "version": "2.3.0",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Industrial Collaborative Robot (Cobot)",
+    "description": "Robot designed to work alongside human workers.",
+    "categories": ["Robotics", "Automation"],
+    "tags": ["cobot", "robot", "automation"],
+    "imageUrl": "/assets/cobot.jpg",
+    "documentation": "https://example.com/cobot-docs",
+    "usageExamples": ["Assembly", "Packaging", "Material handling"],
+    "versions": [
+      {
+        "version": "1.0.1",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Industrial Electric Motor",
+    "description": "High-efficiency electric motor for industrial applications.",
+    "categories": ["Manufacturing", "Energy"],
+    "tags": ["electric motor", "motor", "power"],
+    "imageUrl": "/assets/electric-motor.jpg",
+    "documentation": "https://example.com/electric-motor-docs",
+    "usageExamples": ["Pumps", "Fans", "Machinery"],
+    "versions": [
+      {
+        "version": "3.0.0",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Industrial Programmable Logic Controller (PLC)",
+    "description": "Control system for automating industrial processes.",
+    "categories": ["Automation", "Control Systems"],
+    "tags": ["plc", "control system", "automation"],
+    "imageUrl": "/assets/plc.jpg",
+    "documentation": "https://example.com/plc-docs",
+    "usageExamples": ["Factory automation", "Process control", "Robotics control"],
+    "versions": [
+      {
+        "version": "2.1.0",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Industrial Vacuum Pump",
+    "description": "Pump for creating vacuum in industrial applications.",
+    "categories": ["Manufacturing", "Chemical"],
+    "tags": ["vacuum pump", "pump", "industrial"],
+    "imageUrl": "/assets/vacuum-pump.jpg",
+    "documentation": "https://example.com/vacuum-pump-docs",
+    "usageExamples": ["Packaging", "Semiconductor manufacturing", "Chemical processing"],
+    "versions": [
+      {
+        "version": "1.4.0",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Industrial Sensors Package",
+    "description": "A collection of sensors for industrial monitoring and control.",
+    "categories": ["Automation", "Instrumentation"],
+    "tags": ["sensors", "instrumentation", "monitoring"],
+    "imageUrl": "/assets/sensors.jpg",
+    "documentation": "https://example.com/sensors-docs",
+    "usageExamples": ["Process monitoring", "Quality control", "Safety systems"],
+    "versions": [
+      {
+        "version": "1.2.1",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Industrial Robotics Simulation Software",
+    "description": "Software for simulating robot behavior and programming.",
+    "categories": ["Robotics", "Software"],
+    "tags": ["robotics", "simulation", "software"],
+    "imageUrl": "/assets/robot-sim.jpg",
+    "documentation": "https://example.com/robot-sim-docs",
+    "usageExamples": ["Robot programming", "Offline simulation", "Virtual commissioning"],
+    "versions": [
+      {
+        "version": "2.0.0",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Industrial Machine Vision System",
+    "description": "System for automated inspection and quality control using cameras.",
+    "categories": ["Automation", "Quality Control"],
+    "tags": ["machine vision", "quality control", "inspection"],
+    "imageUrl": "/assets/machine-vision.jpg",
+    "documentation": "https://example.com/machine-vision-docs",
+    "usageExamples": ["Automated inspection", "Defect detection", "Part identification"],
+    "versions": [
+      {
+        "version": "1.8.0",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Industrial Hydraulic Press",
+    "description": "Machine for applying high force for forming and shaping materials.",
+    "categories": ["Manufacturing", "Machinery"],
+    "tags": ["hydraulic press", "press", "forming"],
+    "imageUrl": "/assets/hydraulic-press.jpg",
+    "documentation": "https://example.com/hydraulic-press-docs",
+    "usageExamples": ["Metal forming", "Molding", "Pressing"],
+    "versions": [
+      {
+        "version": "2.2.0",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Industrial Predictive Maintenance Platform",
+    "description": "Software platform for predicting equipment failures and optimizing maintenance.",
+    "categories": ["Automation", "Software"],
+    "tags": ["predictive maintenance", "maintenance", "analytics"],
+    "imageUrl": "/assets/predictive-maintenance.jpg",
+    "documentation": "https://example.com/predictive-maintenance-docs",
+    "usageExamples": ["Equipment monitoring", "Failure prediction", "Maintenance scheduling"],
+    "versions": [
+      {
+        "version": "1.0.0",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Industrial AGV (Automated Guided Vehicle)",
+    "description": "Autonomous vehicle for transporting materials in industrial settings.",
+    "categories": ["Automation", "Logistics"],
+    "tags": ["agv", "autonomous vehicle", "material transport"],
+    "imageUrl": "/assets/agv.jpg",
+    "documentation": "https://example.com/agv-docs",
+    "usageExamples": ["Warehouse automation", "Factory logistics", "Material delivery"],
+    "versions": [
+      {
+        "version": "1.3.0",
+        "status": "stable"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Industrial Digital Twin Software",
+    "description": "Software for creating a virtual representation of a physical industrial asset.",
+    "categories": ["Automation", "Software"],
+    "tags": ["digital twin", "simulation", "virtualization"],
+    "imageUrl": "/assets/digital-twin.jpg",
+    "documentation": "https://example.com/digital-twin-docs",
+    "usageExamples": ["Process optimization", "Performance analysis", "Predictive modeling"],
+    "versions": [
+      {
+        "version": "1.1.0",
+        "status": "stable"
+      }
+    ]
   }
 ]
