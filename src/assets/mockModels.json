@@ -5,7 +5,7 @@
     "description": "A six-axis robotic arm for assembly line automation.",
     "categories": ["Robotics", "Automation"],
     "tags": ["robot", "arm", "industrial"],
-    "imageUrl": "/assets/robot-arm.jpg",
+    "imageUrl": "../assets/robot-arm.jpg",
     "documentation": "https://example.com/robot-arm-docs",
     "usageExamples": ["Assembly line automation", "Material handling"],
     "versions": [

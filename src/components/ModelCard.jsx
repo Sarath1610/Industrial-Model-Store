@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ModelCard.css'; // You can create a CSS file for this
+import './ModelCard.css';
+import IMAGES from "../images/Images.jsx";
 
 function ModelCard({ model }) {
     return (
         <Link to={`/models/${model.id}`} className="model-card">
-            <img src={model.imageUrl} alt="img"/>
+            <img src={IMAGES.image4} alt="img"/>
             <div className="text-part">
                 <div className="title-desc">
                     <h2>{model.name}</h2>

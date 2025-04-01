@@ -17,13 +17,14 @@
 
 .model-card:hover h2{
     cursor: pointer;
-    color: #EF9B0F;
+    color: hsl(36, 100%, 50%);
 }
 
 .model-card h2{
     margin-top: 0;
     font-size: 0.9rem;
     font-weight: normal;
+    color: #FADFAD;
 }
 
 .model-card p {

@@ -19,6 +19,7 @@ function FilterBar({
         'milling',
         'cutting',
         'laser cutting',
+        'metal',
         'additive manufacturing',
         'forming',
         'plc',
@@ -45,9 +46,9 @@ function FilterBar({
 
             <input
                 type="text"
-                placeholder="Filter Models ny name"
+                placeholder="Search by tags"
                 value={searchTerm}
-                onChange={(e) => onSearchChange(e.target.value)}
+                onChange={onSearchChange}
             />
 
             <div className="tag-filters">

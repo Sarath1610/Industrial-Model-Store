@@ -14,18 +14,6 @@
     font-size: 1rem;
 }
 
-input {
-    font-size: 0.9rem;
-    background-color: transparent;
-    padding: 0.3rem 0 0.3rem 2rem;
-    background-image: url("../assets/searchIcon.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 0.5rem 0 1rem 0;
-}
-
 
 .tag-filters {
     display: flex;
@@ -40,5 +28,6 @@ input {
     background: hsl(226, 35%, 7%);
     border-radius: 5px;
     padding: 4px 5px;
+    color: #FFFACD;
 }
 
