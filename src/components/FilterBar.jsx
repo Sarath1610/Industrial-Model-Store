@@ -2,8 +2,6 @@ import React from 'react';
 import './FilterBar.css';
 
 function FilterBar({
-                       searchTerm,
-                       onSearchChange,
                        tagFilter,
                        onTagChange,
                    }) {
@@ -44,12 +42,6 @@ function FilterBar({
 
             <h3>Tags</h3>
 
-            <input
-                type="text"
-                placeholder="Search by tags"
-                value={searchTerm}
-                onChange={onSearchChange}
-            />
 
             <div className="tag-filters">
                 {tags.map((tag) => (
