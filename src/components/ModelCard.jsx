@@ -1,22 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './ModelCard.css'; // You can create a CSS file for this
+import './ModelCard.css';
+import IMAGES from "../images/Images.jsx";
 
 function ModelCard({ model }) {
     return (
-        <div className="model-card">
-            <img src={model.imageUrl} alt={model.name} />
-            <h2>{model.name}</h2>
-            <p>{model.description}</p>
-            <div className="model-tags">
-                {model.tags.map(tag => (
-                    <span key={tag} className="model-tag">
+        <Link to={`/models/${model.id}`} className="model-card">
+            <img src={IMAGES.image4} alt="img"/>
+            <div className="text-part">
+                <div className="title-desc">
+                    <h2>{model.name}</h2>
+                    <p>{model.description}</p>
+                </div>
+                <div className="model-tags">
+                    {model.tags.map(tag => (
+                        <span key={tag} className="model-tag">
             {tag}
           </span>
-                ))}
+                    ))}
+                </div>
             </div>
-            <Link to={`/models/${model.id}`}>View Details</Link>
-        </div>
+        </Link>
     );
 }
 
