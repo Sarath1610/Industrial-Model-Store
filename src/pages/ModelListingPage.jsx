@@ -11,7 +11,6 @@ function ModelListingPage() {
     const [tagFilter, setTagFilter] = useState('');
 
     useEffect(() => {
-        // Fetch data from API here (if applicable)
     }, []);
 
     const handleSearchChange = (term) => {

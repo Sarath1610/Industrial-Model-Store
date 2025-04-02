@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import mockModels from '../assets/mockModels.json';
 import VersionBadge from '../components/VersionBadge';
-// import './ModelDetailPage.css'; // Create CSS for this page
+import './ModelDetailPage.css'; // Create CSS for this page
 
 function ModelDetailPage() {
     const { id } = useParams();

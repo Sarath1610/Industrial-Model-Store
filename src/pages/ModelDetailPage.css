@@ -1,0 +1,92 @@
+.detail-page-container {
+    display: flex;
+}
+
+.model-detail-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: hsl(224, 39%, 15%);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+.model-detail-page h1 {
+    color: #007bff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #FFF8E7;
+    padding-bottom: 10px;
+}
+
+.model-detail-page p {
+    margin-bottom: 20px;
+}
+
+.model-detail-page section {
+    margin-bottom: 30px;
+}
+
+.model-detail-page h2 {
+    color: #555;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #FFF8E7;
+    padding-bottom: 5px;
+}
+
+.model-detail-page a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.model-detail-page a:hover {
+    text-decoration: underline;
+}
+
+.model-detail-page ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.model-detail-page li {
+    margin-bottom: 8px;
+}
+
+.model-versions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.model-version {
+    background-color: hsl(226, 35%, 7%);
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* VersionBadge.css (Assuming VersionBadge component uses this) */
+
+.version-badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    background-color: #FFF8E7;
+    color: hsl(226, 35%, 7%);
+}
+
+.version-badge.stable {
+    background-color: #28a745; /* Green for stable */
+}
+
+.version-badge.beta {
+    background-color: #ffc107; /* Yellow for beta */
+    color: black;
+}
+
+.version-badge.deprecated {
+    background-color: #dc3545; /* Red for deprecated */
+}
