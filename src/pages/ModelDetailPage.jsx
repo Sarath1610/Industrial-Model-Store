@@ -2,14 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import mockModels from '../assets/mockModels.json';
 import VersionBadge from '../components/VersionBadge';
-import './ModelDetailPage.css'; // Create CSS for this page
+import './ModelDetailPage.css';
 
 function ModelDetailPage() {
     const { id } = useParams();
     const [model, setModel] = useState(null);
 
     useEffect(() => {
-        // In a real app, you'd fetch data from an API using the 'id'
         const foundModel = mockModels.find(model => model.id === parseInt(id));
         setModel(foundModel);
     }, [id]);
