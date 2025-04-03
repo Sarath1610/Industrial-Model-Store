@@ -11,6 +11,7 @@ function ModelListingPage() {
     const [tagFilter, setTagFilter] = useState('');
 
     useEffect(() => {
+
     }, []);
 
     const handleSearchChange = (term) => {
@@ -59,7 +60,7 @@ function ModelListingPage() {
                         <div className="search-bar">
 
                             <img src={IMAGES.image3} alt="img"/>
-
+                            
                             <input
                                 type="text"
                                 placeholder="Filter by name"
